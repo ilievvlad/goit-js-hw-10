@@ -1,5 +1,8 @@
 * {
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -9,12 +12,34 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
   color: #212121;
-  line-height: 1.5;
+  line-height: 1.2;
+}
+
+ul li {
+	list-style: none;
 }
 
 #search-box {
-  font: inherit;
-  padding: 8px;
-  max-width: 320px;
-  margin-bottom: 16px;
+  	font: inherit;
+  	padding: 15px;
+  	width: 320px;
+  	margin: 40px 0 40px 40px;
+	border-radius: 10px;
+}
+
+.country-list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+
+.country-item {
+	display: flex;
+	align-items: center;
+	column-gap: 15px;
+	padding: 0 40px;
+}
+
+.info-list {
+	row-gap: 15px;
 }
